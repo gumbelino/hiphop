@@ -35,9 +35,9 @@ file = open('data_xiami.csv', 'w', newline='')
 with file:
     writer = csv.writer(file)
     writer.writerow(header)
-for filename in os.listdir(f'/Users/norzvic/Music/aaa'):
+for filename in os.listdir(f'/Users/norzvic/Music/librosa'):
     if filename.endswith('.mp3'):
-        songname = f'/Users/norzvic/Music/aaa/{filename}'
+        songname = f'/Users/norzvic/Music/librosa/{filename}'
         y, sr = librosa.load(songname, mono=True)
         chroma_stft = librosa.feature.chroma_stft(y=y, sr=sr)
         rmse = librosa.feature.rmse(y=y)
@@ -57,7 +57,10 @@ for filename in os.listdir(f'/Users/norzvic/Music/aaa'):
     else:
         continue
 
+data = pd.read_csv('data_xiami.csv')
+data.head()
 
+data.shape
 
 
 
