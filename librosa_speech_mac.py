@@ -164,7 +164,9 @@ for s in sound:
 # # model.save('C:/Users/Ke Nie/Dropbox/UCSD/18-19/02 Winter/SOCG290 Big Data/Project/model_0.705.h5')
 # model.save('C:/Users/Ke Nie/Dropbox/UCSD/18-19/02 Winter/SOCG290 Big Data/Project/model_0.9125.h5')
 
-# # Load model: model = model.load()
+# Load model: 
+# from keras.models import load_model
+# model = load_model()
 
 # # Predictions on Test Data
 # predictions = model.predict(X_test)

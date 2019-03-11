@@ -112,7 +112,7 @@ model.save('C:/Users/Ke Nie/Dropbox/UCSD/18-19/02 Winter/SOCG290 Big Data/Projec
 
 # Load model: 
 # from keras.models import load_model
-# model = model.load()
+# model = load_model()
 
 # Predictions on Test Data
 predictions = model.predict(X_test)
